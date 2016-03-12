@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Status</title>
+	<link rel="stylesheet" type="text/css" href="css/materialize.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery.js"></script>
+</head>
+<body>
+	<nav>
+		<div class="nav-wrapper">
+			<a href="#!" class="brand-logo"></a>
+			<a href="#" data-activates="mobile-demo" class="button-collapse">
+				<i class="material-icons">toc</i>
+			</a>
+			<ul class="right hide-on-med-and-down">
+				<li><a href="status.html">Status</a></li>
+				<li><a href="prog.html">Programacion Riego</a></li>
+				<li><a href="cali.html">Calibracion</a></li>
+				<li><a href="index.html">Sign Out</a></li>				
+				<li><a href="welcome.html"><i class="material-icons">info</i></a></li>
+			</ul>
+			<ul class="side-nav" id="mobile-demo">
+				<li><a href="status.html">Status</a></li>
+				<li><a href="prog.html">Programacion Riego</a></li>
+				<li><a href="cali.html">Calibracion</a></li>
+				<li><a href="index.html">Sign Out</a></li>				
+				<li><a href="welcome.html"><i class="material-icons">info</i></a></li>
+			</ul>	
+		</div>
+	</nav>
+	<section>
+		<header>
+			<h2 align="center">Status</h2>
+		</header>
+			<h5 align="center">---</h5>
+		<div align="center">
+
+			<a class="btn-floating btn-large waves-effect waves-light red">
+				<i class="material-icons">power_settings_new</i>
+			</a>
+		</div>
+		
+	</section>
+
+	<script type="text/javascript" src="js/materialize.js"></script>
+		<script>
+		$(document).ready(function(){
+			$('.button-collapse').sideNav();
+		});
+	</script>
+</body>
+</html>

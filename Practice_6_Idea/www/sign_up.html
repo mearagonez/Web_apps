@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sign Up</title>
+	<link rel="stylesheet" type="text/css" href="css/materialize.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery.js"></script>
+</head>
+<body>
+	<nav>
+		<div class="nav-wrapper">
+			<a href="#!" class="brand-logo"></a>
+			<a href="#" data-activates="mobile-demo" class="button-collapse">
+				<i class="material-icons">toc</i>
+			</a>
+			<ul class="right hide-on-med-and-down">
+				<li><a href="index.html">Login</a></li>
+				<li><a href="sign_up.html">Sign Up</a></li>
+				<li><a href=""></a></li>
+				<li><a href=""></a></li>
+			</ul>
+			<ul class="side-nav" id="mobile-demo">
+				<li><a href="index.html">Login</a></li>
+				<li><a href="sign_up.html">Sign Up</a></li>
+				<li><a href=""></a></li>
+				<li><a href=""></a></li>
+			</ul>	
+		</div>
+	</nav>
+	<section>
+		<div style="text-align:center;">
+			<form action="index.html" method="post">
+				<div class="row" >
+					<div class="input-field col s4" >
+          				<i class="material-icons prefix">account_circle</i>
+          				<input id="icon_prefix" type="text" class="validate" required>
+          				<label for="icon_prefix">User Name</label>
+        			</div>
+        		</div>
+        		<div class="row">
+        			<div class="input-field col s4">
+        				<i class="material-icons prefix">email</i>
+          				<input id="email" type="email" class="validate" required>
+          				<label for="email" data-error="Example:username@domain" >Email</label>
+        			</div>
+      			</div>
+      			<div class="row" >
+        			<div class="input-field col s4">
+        				<i class="material-icons prefix">lock</i>
+          				<input id="password" type="password" class="validate" required>
+          				<label for="password">Password</label>
+        			</div>
+      			</div>
+      			<div class="row" >
+        			<div class="input-field col s4">
+        				<i class="material-icons prefix">lock</i>
+          				<input id="password1" type="password" class="validate">
+          				<label for="password1">Repeat Password</label>
+        			</div>
+      			</div>
+      			<div class="row"  >
+      				<button class="btn waves-effect waves-light" type="submit" name="action" >			Register
+    					<i class="material-icons right">send</i>
+  					</button>
+  				</div>
+			</form>
+		</div>
+			<blockquote>
+      Ya tienes cuenta, entra ahora mismo <a href="login.html">Login</a>
+    </blockquote>
+	</section>
+
+
+	<script type="text/javascript" src="js/materialize.js"></script>
+		<script>
+		$(document).ready(function(){
+			$('.button-collapse').sideNav();
+		});
+	</script>
+</body>
+</html>

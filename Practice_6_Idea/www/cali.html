@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Calibracion</title>
+	<link rel="stylesheet" type="text/css" href="css/materialize.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery.js"></script>
+</head>
+<body>
+	<nav>
+		<div class="nav-wrapper">
+			<a href="#!" class="brand-logo"></a>
+			<a href="#" data-activates="mobile-demo" class="button-collapse">
+				<i class="material-icons">toc</i>
+			</a>
+			<ul class="right hide-on-med-and-down">
+				<li><a href="status.html">Status</a></li>
+				<li><a href="prog.html">Programacion Riego</a></li>
+				<li><a href="cali.html">Calibracion</a></li>
+				<li><a href="index.html">Sign Out</a></li>				
+				<li><a href="welcome.html"><i class="material-icons">info</i></a></li>
+			</ul>
+			<ul class="side-nav" id="mobile-demo">
+				<li><a href="status.html">Status</a></li>
+				<li><a href="prog.html">Programacion Riego</a></li>
+				<li><a href="cali.html">Calibracion</a></li>
+				<li><a href="index.html">Sign Out</a></li>				
+				<li><a href="welcome.html"><i class="material-icons">info</i></a></li>
+			</ul>	
+		</div>
+	</nav>
+	<section>
+		<div class="container">
+			<h2 align="center">Configuration</h2>
+			<form action="">
+				<div class="row" >
+					<div class="input-field col s4" >
+          				<i class="material-icons prefix">settings_input_antenna</i>
+          				<input id="icon_prefix" type="text" class="validate" required>
+          				<label for="icon_prefix">Ip del Server</label>
+        			</div>
+        		</div>
+        		<button class="btn waves-effect waves-light" type="submit" name="action" >Save
+    					<i class="material-icons right">send</i>
+  				</button>
+  				<button class="btn waves-effect waves-light" type="submit" name="action" >Test
+    					<i class="material-icons right">send</i>
+  				</button>
+			</form>
+			<h3 align="center">Irrigation System</h3>
+			<div align="center">
+				<a class="waves-effect waves-light btn">
+					<i class="material-icons left">done</i>Test
+				</a>
+				<blockquote>
+      				<p>
+      				Here goes a Log console
+      				</p>      			
+    			</blockquote>
+
+			</div>
+
+		</div>
+	</section>
+
+	<script type="text/javascript" src="js/materialize.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('.button-collapse').sideNav();
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="css/materialize.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+	<nav>
+		<div class="nav-wrapper">
+			<a href="#!" class="brand-logo"></a>
+			<a href="#" data-activates="mobile-demo" class="button-collapse">
+				<i class="material-icons">toc</i>
+			</a>
+			<ul class="right hide-on-med-and-down">
+				<li><a href="status.html">Status</a></li>
+				<li><a href="prog.html">Programacion Riego</a></li>
+				<li><a href="cali.html">Calibracion</a></li>
+				<li><a href="index.html">Sign Out</a></li>				
+				<li><a href="welcome.html"><i class="material-icons">info</i></a></li>
+			</ul>
+			<ul class="side-nav" id="mobile-demo">
+				<li><a href="status.html">Status</a></li>
+				<li><a href="prog.html">Programacion Riego</a></li>
+				<li><a href="cali.html">Calibracion</a></li>
+				<li><a href="index.html">Sign Out</a></li>				
+				<li><a href="welcome.html"><i class="material-icons">info</i></a></li>
+			</ul>	
+		</div>
+	</nav>
+	<section>
+		<header>
+			<h2 align="center">Welcome  back my friend !</h2>
+		</header>
+		<article>
+
+			<img align="center" src="" alt="Here goes logo photo">
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas tenetur fugit ad, placeat quia similique ullam, illo labore vitae omnis modi aperiam veritatis voluptatum delectus mollitia. Repudiandae expedita vitae fuga.
+			</p>
+			<div align="center">
+				Here goes a video instructions
+				<br>
+				<video  width="320" height="240" controls>
+
+				Your browser does not support the video tag.
+			</video>
+			</div>
+			
+			<blockquote>
+      			<p>
+      				Irrigation system v 1.0
+      			</p>      			
+    		</blockquote>
+		</article>
+	</section>
+	<footer class="page-footer" style="bottom:0;width:100%;">
+		<div class="footer-copyright">
+            <div class="container">
+            © 2016 Copyright Irrigation Rain System          
+            </div>
+	</footer>
+</div>
+
+	<script type="text/javascript" src="js/materialize.js"></script>
+		<script>
+		$(document).ready(function(){
+			$('.button-collapse').sideNav();
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Programacion de Riego</title>
+	<link rel="stylesheet" type="text/css" href="css/materialize.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery.js"></script>
+</head>
+<body>
+	<nav>
+		<div class="nav-wrapper">
+			<a href="#!" class="brand-logo"></a>
+			<a href="#" data-activates="mobile-demo" class="button-collapse">
+				<i class="material-icons">toc</i>
+			</a>
+			<ul class="right hide-on-med-and-down">
+				<li><a href="status.html">Status</a></li>
+				<li><a href="prog.html">Programacion Riego</a></li>
+				<li><a href="cali.html">Calibracion</a></li>
+				<li><a href="index.html">Sign Out</a></li>				
+				<li><a href="welcome.html"><i class="material-icons">info</i></a></li>
+			</ul>
+			<ul class="side-nav" id="mobile-demo">
+				<li><a href="status.html">Status</a></li>
+				<li><a href="prog.html">Programacion Riego</a></li>
+				<li><a href="cali.html">Calibracion</a></li>
+				<li><a href="index.html">Sign Out</a></li>				
+				<li><a href="welcome.html"><i class="material-icons">info</i></a></li>
+			</ul>	
+		</div>
+	</nav>
+	<section>
+		<div class="container">
+			<div class="row">
+				<h2 align="center">Auto</h2>
+				<div>
+					Here goes a weather widget
+				</div>
+			<div class="col l6 s12">
+			<p>				
+				<div class="switch">
+    				<label>
+     					 Off
+      				<input type="checkbox">
+      				<span class="lever"></span>
+     					 On
+    				</label>
+ 				 </div>
+			</p>
+			</div>
+			<div class="col l4 offset-l2 s12">
+				<table class="striped centered">
+					<thead>
+						<tr>
+							<th>Timer</th>
+							<th>Inicio de riego</th>
+							<th>Fin de riego</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>---</td>
+							<td>---</td>
+							<td>---</td>
+						</tr>
+					</tbody>
+				</table>
+
+			</div>	
+		</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<h2 align="center">Manual</h2>
+				<form action="">
+					<table class="centered">
+						<thead>
+							<tr>
+								<th><label for="first">Hora inicio</label></th>
+								<th><label for="last">Hora Final</label></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><input id="first" type="time" ></td>
+								<td><input id="last" type="time"></td>
+							</tr>						
+						</tbody>  				
+         				 
+       				</table> 
+       				<button class="btn waves-effect waves-light" type="submit" name="action" >Add
+    					<i class="material-icons right">send</i>
+  					</button>
+				</form>
+				<table class="striped centered">
+					<thead>
+						<tr>
+							<th>Timer</th>
+							<th>Inicio de riego</th>
+							<th>Fin de riego</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>---</td>
+							<td>---</td>
+							<td>---</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</section>
+	
+	<script type="text/javascript" src="js/materialize.js"></script>
+		<script>
+		$(document).ready(function(){
+			$('.button-collapse').sideNav();
+		});
+	</script>
+</body>
+</html>
