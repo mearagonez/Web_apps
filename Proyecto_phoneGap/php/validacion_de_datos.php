@@ -1,6 +1,6 @@
-<?php
+﻿<?php
 
-$conexion=mysqli_connect("mysql.gbfreehosting.com","u416931568_admin","tec2.123","u416931568_acc");
+$conexion=mysqli_connect("host","user","pass","data_base");
 
 /* Extrae los valores enviados desde la aplicacion movil */
 $usuarioEnviado = isset($_GET['usuario']) ? $_GET['usuario'] : null ;
