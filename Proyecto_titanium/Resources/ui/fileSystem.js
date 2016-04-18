@@ -39,8 +39,12 @@ exports.show = function(){
 }
 exports.create = function(){
 	var foo = Ti.Filesystem.getFile(Ti.Filesystem.ApplicationDataDirectory,'myfile.txt');
-	foo.write('hola a todos');
-	alert('archivo creado');
+	if(foo.exists()==false){
+		foo.createFile();
+		foo.write('hola a todos');
+		alert('archivo creado');
+	}	
+	
 }
 exports.update = function(data){
 	var foo = Ti.Filesystem.getFile(Ti.Filesystem.ApplicationDataDirectory,'myfile.txt');
@@ -56,9 +60,7 @@ exports.deleting = function(){
 	var foo = Ti.Filesystem.getFile(Ti.Filesystem.ApplicationDataDirectory,'myfile.txt');
 	if(foo.exists()){
 		foo.deleteFile();
-		alert('eleminar');
-		
-		
+		alert('eleminar');		
 	} 
 	else{
 	alert('archivo no existe');
