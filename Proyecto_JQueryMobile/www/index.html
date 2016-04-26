@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<script>
+$(document).on('pagecreate',function(event){
+	$(window).on('orientationchange',function(event){
+
+	});
+});
+	</script>
+	<style>
+	.ui-bar-f{
+		color:white;
+		background-color: #00b8e6;		
+	}
+	.ui-page-theme-f{
+		font-weight: bold;
+		background-color: lightblue;		
+	}
+	.ui-btn{
+		color:#00b8e6;
+		background: white;
+	}
+	div{
+		text-align: center;
+	}
+	</style>
+</head>
+<body>
+	<div data-role="page" page-theme="f" id="pageone">
+		<div data-role="header" data-theme="f">
+			<h1>MathSquad</h1>			
+		</div>
+		<div data-role="main" class="ui-content" data-theme="f">
+			<a href="#pageone" data-transition="flip" class="ui-btn ui-btn-inline ui-corner-all ui-btn-f">Inicio</a>
+			<br>
+			<a href="#pagetwo" data-transition="flip" class="ui-btn ui-btn-inline ui-corner-all ui-btn-f">Jugar</a>
+			<br>
+			<a href="#pagethree" data-transition="flip" class="ui-btn ui-btn-inline ui-corner-all ui-btn-f">Instrucciones</a>
+			<br><br>						
+		</div>
+		<div data-role="footer" data-theme="f">
+			<h1>Todos los derechos reservados</h1>
+		</div>
+	</div >
+	<div data-role="page" page-theme="f" id="pagetwo" style="align-text=center;">
+		<div data-role="header" data-theme="f">
+			<a href="#pageone" data-transition="flip" class="ui-btn ui-btn-inline ui-corner-all ui-btn-f" data-icon="home
+			" data-theme="f">Inicio</a>
+			<h1>MathSquad</h1>			
+		</div>
+		<div data-role="main" class="ui-content" >
+			<p id="x">:)</p>
+			<p id="y">:)</p>
+			<div class="ui-field-contain">
+				<label >Resultado:</label>
+				<form id="form">
+					<input type="number" name="result" id="result">				
+				</form>					
+				<button type="button" onclick="myFunction()" name="siguiente">Siguiente</button>
+				<button type="button" onclick="funcion()" name="siguiente">Comprobar</button>
+			</div>
+
+			<script type="text/javascript">
+			var resultado;
+			var compara;
+			function myFunction(){
+				var x=Math.floor((Math.random()*12)+1);
+				$('#x').text(''+x);
+				var y=Math.floor((Math.random()*12)+1);
+				$('#y').text(''+y);
+				resultado = x*y;				
+			}
+
+			function funcion(){
+				compara=$('#result').val();
+				if(compara==resultado){
+					alert(':D');
+				}else{
+					alert(':C');
+				}
+			}
+			</script>
+
+		</div>
+	</div>
+	<div data-role="page" date-theme="f" id="pagethree" style="align-text=center;">
+		<div data-role="header" data-theme="f">
+			<a href="#pageone" data-transition="flip" data-icon="home" data-theme="f">Inicio</a>
+			<h1>MathSquad</h1>
+		</div>
+		<div data-role="main" class="ui-content">
+			<div data-role="collapsible" data-collapsed="true">
+				<h1>Botones</h1>
+				<p>El boton "Siguiente" generara dos numeros aleatorios. <br>
+					El boton "Comprobar" te dira si la multiplicacion es correcta o si es incorrecta 
+				</p>
+			</div>			
+		</div>
+	</div>	
+
+		
+		
+</body>
+</html>
