@@ -1,4 +1,4 @@
-angular.module('starter.UserList', ['ionic'])
+angular.module('starter.UserList', ['ionic']);
 
 .config(function($stateProvider, $urlRouterProvider){
   $stateProvider
@@ -12,7 +12,7 @@ angular.module('starter.UserList', ['ionic'])
 		templateUrl: "templates/UserListDetail.html",
 		controller: "UserListDetailCtrl"
 	})
-})
+});
 
 .factory('userService', function($http) {
   var users = [];
@@ -29,7 +29,7 @@ angular.module('starter.UserList', ['ionic'])
 		}
 	
 	}
-})
+});
 
 .controller("UserListCtrl",function($scope, userService){
 	userService.getUsers().then(function(users){
